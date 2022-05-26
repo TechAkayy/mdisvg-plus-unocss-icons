@@ -9,8 +9,11 @@ import { createVuetify } from 'vuetify'
 
 export default createVuetify({
 	icons: {
-		defaultSet: 'moo',
-		aliases,
+		defaultSet: 'class',
+		aliases: Object.keys(aliases).reduce((obj, key) => {
+			obj[key] = `moo:${aliases[key]}`
+			return obj
+		}, {}),
 		sets: {
 			moo
 		}
