@@ -8,6 +8,7 @@ import { aliases, mdi as moo } from 'vuetify/iconsets/mdi-svg'
 import { createVuetify } from 'vuetify'
 
 export default createVuetify({
+	// https://stackblitz.com/edit/github-brzrnf?file=src%2Fplugins%2Fvuetify.js,src%2FApp.vue,vite.config.js
 	icons: {
 		defaultSet: 'class',
 		aliases: Object.keys(aliases).reduce((obj, key) => {
